@@ -1,0 +1,6 @@
+{
+  "name": "Simulador Interactivo de BIOS Educativo",
+  "description": "Simulador interactivo y educativo de BIOS Antigua (Legacy/Phoenix) y Moderna (UEFI Gaming). Aprende el funcionamiento, impacto de hardware, teclas de acceso por marca, perfiles y retos técnicos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

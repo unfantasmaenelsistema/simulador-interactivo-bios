@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="uefiBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <linearGradient id="meterGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="60%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame / Screen bezel -->
+  <rect width="1200" height="675" fill="#020617" />
+  <rect x="15" y="15" width="1170" height="645" rx="8" fill="url(#uefiBg)" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Top Navigation Bar -->
+  <rect x="15" y="15" width="1170" height="56" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  
+  <!-- Logo / Brand Title -->
+  <g transform="translate(35, 30)">
+    <circle cx="14" cy="13" r="10" fill="#dc2626" />
+    <text x="32" y="19" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="900" letter-spacing="1">ROG STRIX UEFI BIOS UTILITY</text>
+    <text x="315" y="19" fill="#eab308" font-family="monospace" font-size="12" font-weight="bold">- EZ MODE [v2.80-X64]</text>
+  </g>
+
+  <!-- Header Buttons -->
+  <g transform="translate(680, 28)">
+    <!-- EZ Flash F11 -->
+    <rect x="0" y="0" width="120" height="30" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1" />
+    <text x="60" y="20" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">⚡ EZ Flash (F11)</text>
+
+    <!-- Health HUD F8 -->
+    <rect x="130" y="0" width="115" height="30" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+    <text x="187" y="20" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">📊 HUD Salud (F8)</text>
+
+    <!-- Advanced Mode F7 -->
+    <rect x="255" y="0" width="115" height="30" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1" />
+    <text x="312" y="20" fill="#bfdbfe" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">⚙️ Advanced (F7)</text>
+
+    <!-- Exit ESC -->
+    <rect x="380" y="0" width="95" height="30" rx="6" fill="#374151" stroke="#4b5563" stroke-width="1" />
+    <text x="427" y="20" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Salir (ESC)</text>
+  </g>
+
+  <!-- Main Grid Content -->
+  <!-- Left Panel: CPU & Memory Telemetry -->
+  <g transform="translate(35, 90)">
+    <!-- Card 1: CPU Status -->
+    <rect x="0" y="0" width="360" height="230" rx="8" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.2" />
+    <rect x="0" y="0" width="360" height="36" rx="8" fill="#1e293b" opacity="0.6" />
+    <text x="16" y="24" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Información de CPU &amp; Frecuencia</text>
+
+    <text x="16" y="65" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Intel Core i9-14900K @ 3.20GHz</text>
+    <text x="16" y="90" fill="#94a3b8" font-family="monospace" font-size="12">Frecuencia Actual: <tspan fill="#4ade80" font-weight="bold">5400 MHz (x54)</tspan></text>
+    <text x="16" y="112" fill="#94a3b8" font-family="monospace" font-size="12">Voltaje Vcore: <tspan fill="#f59e0b" font-weight="bold">1.285 V (Manual)</tspan></text>
+    <text x="16" y="134" fill="#94a3b8" font-family="monospace" font-size="12">Cores: 24 (8P + 16E) / 32 Hilos</text>
+    <text x="16" y="156" fill="#94a3b8" font-family="monospace" font-size="12">TDP Estimado: <tspan fill="#f87171" font-weight="bold">253 Watts</tspan></text>
+
+    <!-- Temperature gauge bar -->
+    <text x="16" y="188" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Temperatura CPU: 42°C (Normal)</text>
+    <rect x="16" y="196" width="328" height="12" rx="6" fill="#1f2937" />
+    <rect x="16" y="196" width="138" height="12" rx="6" fill="#10b981" />
+
+    <!-- Card 2: Memory DRAM Status -->
+    <rect x="0" y="245" width="360" height="230" rx="8" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.2" />
+    <rect x="0" y="245" width="360" height="36" rx="8" fill="#1e293b" opacity="0.6" />
+    <text x="16" y="269" fill="#c084fc" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Memoria DRAM &amp; Perfil XMP</text>
+
+    <text x="16" y="310" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="14" font-weight="600">32768 MB (DDR5 Dual Channel)</text>
+    <text x="16" y="335" fill="#94a3b8" font-family="monospace" font-size="12">DIMM_A2: Corsair 16GB 6000MHz</text>
+    <text x="16" y="357" fill="#94a3b8" font-family="monospace" font-size="12">DIMM_B2: Corsair 16GB 6000MHz</text>
+    <text x="16" y="380" fill="#94a3b8" font-family="monospace" font-size="12">Perfil XMP / EXPO: <tspan fill="#38bdf8" font-weight="bold">XMP Perfil I [Activo]</tspan></text>
+    <text x="16" y="403" fill="#94a3b8" font-family="monospace" font-size="12">Voltaje DRAM: <tspan fill="#38bdf8">1.350 V</tspan></text>
+
+    <!-- XMP Status badge -->
+    <rect x="16" y="425" width="160" height="28" rx="6" fill="#047857" opacity="0.4" stroke="#10b981" stroke-width="1" />
+    <text x="96" y="443" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✓ XMP 6000MT/s CL30</text>
+  </g>
+
+  <!-- Middle Panel: Hardware Health & Fans -->
+  <g transform="translate(415, 90)">
+    <!-- Hardware Diagnostics & Fan Curve -->
+    <rect x="0" y="0" width="410" height="475" rx="8" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.2" />
+    <rect x="0" y="0" width="410" height="36" rx="8" fill="#1e293b" opacity="0.6" />
+    <text x="16" y="24" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Monitor de Ventiladores &amp; Q-Fan Control</text>
+
+    <!-- Fan curve mini graph simulation -->
+    <rect x="20" y="55" width="370" height="150" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+    <line x1="20" y1="105" x2="390" y2="105" stroke="#1e293b" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="20" y1="155" x2="390" y2="155" stroke="#1e293b" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="140" y1="55" x2="140" y2="205" stroke="#1e293b" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="260" y1="55" x2="260" y2="205" stroke="#1e293b" stroke-width="1" stroke-dasharray="3 3"/>
+    
+    <!-- Curve path -->
+    <path d="M 30 180 Q 140 170 200 135 T 320 85 T 380 70" fill="none" stroke="#06b6d4" stroke-width="3" />
+    <circle cx="200" cy="135" r="5" fill="#38bdf8" />
+    <text x="215" y="132" fill="#38bdf8" font-family="monospace" font-size="10">Punto Actual: 42°C @ 1250 RPM</text>
+
+    <!-- Fan Sensors List -->
+    <g transform="translate(20, 225)">
+      <rect x="0" y="0" width="175" height="65" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">CPU_FAN</text>
+      <text x="12" y="48" fill="#4ade80" font-family="monospace" font-size="18" font-weight="bold">1254 RPM</text>
+
+      <rect x="195" y="0" width="175" height="65" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="207" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">AIO_PUMP</text>
+      <text x="207" y="48" fill="#38bdf8" font-family="monospace" font-size="18" font-weight="bold">2450 RPM</text>
+
+      <rect x="0" y="75" width="175" height="65" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="97" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">CHA_FAN1</text>
+      <text x="12" y="123" fill="#e2e8f0" font-family="monospace" font-size="18" font-weight="bold">920 RPM</text>
+
+      <rect x="195" y="75" width="175" height="65" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="207" y="97" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">VCore VRM</text>
+      <text x="207" y="123" fill="#f59e0b" font-family="monospace" font-size="18" font-weight="bold">46.5 °C</text>
+    </g>
+
+    <!-- Storage detection -->
+    <g transform="translate(20, 385)">
+      <text x="0" y="14" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Almacenamiento SATA / M.2 NVMe:</text>
+      <text x="0" y="36" fill="#e2e8f0" font-family="monospace" font-size="11">• M.2_1: Samsung 990 PRO 2TB (PCIe 4.0 x4) - [SO Windows 11]</text>
+      <text x="0" y="56" fill="#e2e8f0" font-family="monospace" font-size="11">• SATA_1: Crucial MX500 1TB (AHCI Mode)</text>
+      <text x="0" y="76" fill="#64748b" font-family="monospace" font-size="11">• SATA_2: N/A (Desconectado)</text>
+    </g>
+  </g>
+
+  <!-- Right Panel: Boot Priority & Quick Tuning -->
+  <g transform="translate(845, 90)">
+    <rect x="0" y="0" width="320" height="475" rx="8" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.2" />
+    <rect x="0" y="0" width="320" height="36" rx="8" fill="#1e293b" opacity="0.6" />
+    <text x="16" y="24" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Prioridad de Arranque (Boot)</text>
+
+    <!-- Draggable boot items simulation -->
+    <g transform="translate(16, 50)">
+      <rect x="0" y="0" width="288" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+      <text x="12" y="26" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">1.</text>
+      <text x="32" y="26" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12">Windows Boot Manager (NVMe)</text>
+
+      <rect x="0" y="52" width="288" height="42" rx="6" fill="#111827" stroke="#334155" stroke-width="1" />
+      <text x="12" y="78" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">2.</text>
+      <text x="32" y="78" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">USB Kingston DataTraveler 32GB</text>
+
+      <rect x="0" y="104" width="288" height="42" rx="6" fill="#111827" stroke="#334155" stroke-width="1" />
+      <text x="12" y="130" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">3.</text>
+      <text x="32" y="130" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Crucial MX500 SSD SATA</text>
+
+      <rect x="0" y="156" width="288" height="42" rx="6" fill="#111827" stroke="#334155" stroke-width="1" opacity="0.6"/>
+      <text x="12" y="182" fill="#64748b" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">4.</text>
+      <text x="32" y="182" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Realtek PCIe GBE PXE Network</text>
+    </g>
+
+    <!-- Quick action buttons -->
+    <g transform="translate(16, 265)">
+      <text x="0" y="18" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Herramientas Rápidas:</text>
+
+      <!-- Button: Test de Estrés -->
+      <rect x="0" y="32" width="288" height="38" rx="6" fill="#991b1b" opacity="0.8" stroke="#ef4444" stroke-width="1" />
+      <text x="144" y="56" fill="white" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">🔥 Lanzar Test de Estrés</text>
+
+      <!-- Button: Misiones / Retos -->
+      <rect x="0" y="80" width="288" height="38" rx="6" fill="#065f46" opacity="0.8" stroke="#10b981" stroke-width="1" />
+      <text x="144" y="104" fill="white" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">🎯 Modo Misiones &amp; Retos</text>
+
+      <!-- Button: Cargar Perfil Óptimo -->
+      <rect x="0" y="128" width="288" height="38" rx="6" fill="#1e3a8a" opacity="0.8" stroke="#3b82f6" stroke-width="1" />
+      <text x="144" y="152" fill="white" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">📋 Perfiles &amp; Comparador</text>
+    </g>
+  </g>
+
+  <!-- Bottom Legend Bar -->
+  <rect x="15" y="585" width="1170" height="75" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+  <g transform="translate(35, 628)">
+    <text x="0" y="0" fill="#94a3b8" font-family="monospace" font-size="12">
+      <tspan fill="#38bdf8" font-weight="bold">[F1] Ayuda</tspan>   
+      <tspan fill="#38bdf8" font-weight="bold">[F7] Modo Avanzado</tspan>   
+      <tspan fill="#10b981" font-weight="bold">[F8] HUD Salud</tspan>   
+      <tspan fill="#38bdf8" font-weight="bold">[F9] Buscar</tspan>   
+      <tspan fill="#fbbf24" font-weight="bold">[F11] EZ Flash BIOS</tspan>   
+      <tspan fill="#f43f5e" font-weight="bold">[F10] Guardar &amp; Reset</tspan>   
+      <tspan fill="#94a3b8">[ESC] Salir</tspan>
+    </text>
+  </g>
+</svg>

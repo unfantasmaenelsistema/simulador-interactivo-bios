@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stressBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#180b0b" />
+      <stop offset="100%" stop-color="#090505" />
+    </linearGradient>
+    <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="50%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="#050505" />
+  <rect x="100" y="35" width="1000" height="605" rx="14" fill="url(#stressBg)" stroke="#ef4444" stroke-width="2" />
+
+  <!-- Header -->
+  <rect x="100" y="35" width="1000" height="64" rx="14" fill="#2d0f0f" stroke="#7f1d1d" stroke-width="1" />
+  <g transform="translate(130, 57)">
+    <circle cx="18" cy="12" r="14" fill="#dc2626" />
+    <text x="18" y="17" fill="white" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">🔥</text>
+    <text x="44" y="18" fill="white" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">
+      Banco de Pruebas de Estabilidad y Carga Térmica (Stress Test 10s)
+    </text>
+    <text x="730" y="18" fill="#fca5a5" font-family="monospace" font-size="13">
+      [Prime95 Small FFTs Emulation]
+    </text>
+  </g>
+
+  <!-- Metric Gauges Row -->
+  <g transform="translate(130, 120)">
+    <!-- Metric 1: Temperature -->
+    <rect x="0" y="0" width="220" height="110" rx="8" fill="#1c1010" stroke="#7f1d1d" stroke-width="1" />
+    <text x="16" y="28" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12">TEMPERATURA CPU</text>
+    <text x="16" y="68" fill="#ef4444" font-family="monospace" font-size="34" font-weight="bold">88.4 °C</text>
+    <text x="16" y="94" fill="#f87171" font-family="system-ui, sans-serif" font-size="11">⚠️ Alerta Thermal Throttling</text>
+
+    <!-- Metric 2: Vcore Voltage -->
+    <rect x="240" y="0" width="220" height="110" rx="8" fill="#1c1010" stroke="#7f1d1d" stroke-width="1" />
+    <text x="16" y="28" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12">VOLTAJE VCORE</text>
+    <text x="16" y="68" fill="#f59e0b" font-family="monospace" font-size="34" font-weight="bold">1.345 V</text>
+    <text x="16" y="94" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="11">Elevado (Vdroop compensado)</text>
+
+    <!-- Metric 3: Power Consumption -->
+    <rect x="480" y="0" width="220" height="110" rx="8" fill="#1c1010" stroke="#7f1d1d" stroke-width="1" />
+    <text x="16" y="28" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12">CONSUMO VRM ESTIMADO</text>
+    <text x="16" y="68" fill="#38bdf8" font-family="monospace" font-size="34" font-weight="bold">284 W</text>
+    <text x="16" y="94" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Límite PL2: 300W</text>
+
+    <!-- Metric 4: Stability Index -->
+    <rect x="720" y="0" width="220" height="110" rx="8" fill="#1c1010" stroke="#7f1d1d" stroke-width="1" />
+    <text x="16" y="28" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12">ÍNDICE DE ESTABILIDAD</text>
+    <text x="16" y="68" fill="#4ade80" font-family="monospace" font-size="34" font-weight="bold">92 %</text>
+    <text x="16" y="94" fill="#86efac" font-family="system-ui, sans-serif" font-size="11">Apto para flasheo seguro</text>
+  </g>
+
+  <!-- Realtime Graph Simulation -->
+  <g transform="translate(130, 250)">
+    <rect x="0" y="0" width="940" height="210" rx="8" fill="#0d0707" stroke="#331414" stroke-width="1" />
+    <text x="20" y="30" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">
+      Curva de Temperatura y Carga por Hilos en Tiempo Real (10 Segundos):
+    </text>
+
+    <!-- Graph axes -->
+    <line x1="60" y1="50" x2="60" y2="180" stroke="#451a1a" stroke-width="1" />
+    <line x1="60" y1="180" x2="900" y2="180" stroke="#451a1a" stroke-width="1" />
+    
+    <!-- Temperature curve -->
+    <path d="M 60 160 Q 180 140 280 100 T 500 80 T 700 75 T 900 70" fill="none" stroke="#ef4444" stroke-width="3" />
+    <!-- Wattage curve -->
+    <path d="M 60 170 Q 200 130 350 95 T 600 90 T 900 88" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 4" />
+
+    <text x="20" y="80" fill="#ef4444" font-family="monospace" font-size="10">90°C</text>
+    <text x="20" y="125" fill="#ef4444" font-family="monospace" font-size="10">65°C</text>
+    <text x="20" y="170" fill="#ef4444" font-family="monospace" font-size="10">40°C</text>
+    <text x="860" y="195" fill="#6b7280" font-family="monospace" font-size="10">Tiempo: 10s</text>
+  </g>
+
+  <!-- Diagnostic Terminal Output -->
+  <g transform="translate(130, 480)">
+    <rect x="0" y="0" width="940" height="90" rx="8" fill="#000000" stroke="#262626" stroke-width="1" />
+    <text x="18" y="26" fill="#4ade80" font-family="monospace" font-size="12">
+      [00:03.4] Inyectando hilos AVX2 en 24 cores... Cálculos de matrices FFT OK.
+    </text>
+    <text x="18" y="48" fill="#fbbf24" font-family="monospace" font-size="12">
+      [00:06.8] Aviso: Core #4 y Core #7 superan los 85°C. Ajuste de ventilación automático a 100%.
+    </text>
+    <text x="18" y="70" fill="#38bdf8" font-family="monospace" font-size="12">
+      [00:10.0] Test concluido sin errores de redondeo de memoria (0 WHEA Logger errors).
+    </text>
+  </g>
+
+  <!-- Bottom CTA -->
+  <g transform="translate(130, 585)">
+    <rect x="740" y="0" width="200" height="40" rx="8" fill="#dc2626" stroke="#f87171" stroke-width="1" />
+    <text x="840" y="25" fill="white" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Repetir Prueba</text>
+  </g>
+</svg>

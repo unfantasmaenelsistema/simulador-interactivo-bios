@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="modalBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="progGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Darkened background backdrop -->
+  <rect width="1200" height="675" fill="#030712" />
+  
+  <!-- Outer Modal Window -->
+  <rect x="100" y="30" width="1000" height="615" rx="14" fill="url(#modalBg)" stroke="#38bdf8" stroke-width="2" />
+
+  <!-- Modal Header -->
+  <rect x="100" y="30" width="1000" height="64" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  <g transform="translate(130, 52)">
+    <circle cx="18" cy="12" r="14" fill="#0284c7" />
+    <text x="18" y="17" fill="white" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">⚡</text>
+    <text x="44" y="18" fill="white" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">
+      ASUS EZ Flash 3 &amp; Q-Flash Firmware Update Utility
+    </text>
+    <text x="650" y="18" fill="#38bdf8" font-family="monospace" font-size="13">
+      [SPI FLASH ROM: Winbond W25Q256JVEIQ 32MB]
+    </text>
+  </g>
+
+  <!-- Warning Banner for Hardware Stability / Overclocking -->
+  <g transform="translate(130, 115)">
+    <rect x="0" y="0" width="940" height="54" rx="8" fill="#451a03" stroke="#f59e0b" stroke-width="1.2" />
+    <text x="20" y="24" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">
+      ⚠️ Verificación de Seguridad y Estabilidad Térmica/Voltaje en Tiempo Real
+    </text>
+    <text x="20" y="44" fill="#fed7aa" font-family="system-ui, sans-serif" font-size="12">
+      Si el sistema sufre inestabilidad por overclocking agresivo o caída de voltaje, el flasheo abortará y corromperá el Boot Block.
+    </text>
+    <rect x="780" y="12" width="140" height="30" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1" />
+    <text x="850" y="31" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Evaluar con Stress Test</text>
+  </g>
+
+  <!-- Firmware Comparison Cards -->
+  <g transform="translate(130, 190)">
+    <!-- Current BIOS ROM -->
+    <rect x="0" y="0" width="455" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">FIRMWARE ACTUAL EN PLACA</text>
+    <text x="20" y="65" fill="#f8fafc" font-family="monospace" font-size="20" font-weight="bold">Versión: v2.80-X64</text>
+    <text x="20" y="92" fill="#94a3b8" font-family="monospace" font-size="12">Build Date: 2025/11/14 | Microcode: 0x11D</text>
+    <text x="20" y="112" fill="#94a3b8" font-family="monospace" font-size="12">SHA-256: 8f4a...e12d | Estado: Operativo</text>
+
+    <!-- Target New ROM -->
+    <rect x="485" y="0" width="455" height="150" rx="8" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5" />
+    <text x="505" y="32" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">NUEVO ARCHIVO ROM (USB: ROG-Z790-3201.CAP)</text>
+    <text x="505" y="65" fill="#38bdf8" font-family="monospace" font-size="20" font-weight="bold">Versión: v3.20-X64 (Recomendado)</text>
+    <text x="505" y="92" fill="#94a3b8" font-family="monospace" font-size="12">Build Date: 2026/08/20 | Microcode: 0x129 (Intel Baseline)</text>
+    <text x="505" y="112" fill="#4ade80" font-family="monospace" font-size="12">✓ Checksum Validado (CRC32: OK - Autenticación Digital RSA)</text>
+  </g>
+
+  <!-- Progress Bar & Sector Flashing Simulation -->
+  <g transform="translate(130, 365)">
+    <rect x="0" y="0" width="940" height="185" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+    
+    <text x="24" y="34" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">
+      Progreso de Programación del Bloque de Memoria Flash SPI:
+    </text>
+    <text x="780" y="34" fill="#34d399" font-family="monospace" font-size="16" font-weight="bold">
+      68% [16 / 24 Bloques]
+    </text>
+
+    <!-- Outer progress track -->
+    <rect x="24" y="55" width="892" height="24" rx="12" fill="#1e293b" />
+    <rect x="24" y="55" width="606" height="24" rx="12" fill="url(#progGrad)" />
+
+    <!-- Sector indicator grid -->
+    <g transform="translate(24, 98)">
+      <!-- 24 simulated memory blocks -->
+      <text x="0" y="-8" fill="#64748b" font-family="monospace" font-size="11">Sectores SPI Flash (4KB c/u):</text>
+      <!-- Row of green flashed blocks -->
+      <rect x="0" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="37" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="74" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="111" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="148" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="185" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="222" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="259" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="296" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="333" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="370" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="407" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="444" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="481" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="518" y="0" width="32" height="18" rx="3" fill="#10b981" />
+      <rect x="555" y="0" width="32" height="18" rx="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Remaining pending blocks -->
+      <rect x="592" y="0" width="32" height="18" rx="3" fill="#334155" />
+      <rect x="629" y="0" width="32" height="18" rx="3" fill="#334155" />
+      <rect x="666" y="0" width="32" height="18" rx="3" fill="#334155" />
+      <rect x="703" y="0" width="32" height="18" rx="3" fill="#334155" />
+      <rect x="740" y="0" width="32" height="18" rx="3" fill="#334155" />
+      <rect x="777" y="0" width="32" height="18" rx="3" fill="#334155" />
+      <rect x="814" y="0" width="32" height="18" rx="3" fill="#334155" />
+      <rect x="851" y="0" width="32" height="18" rx="3" fill="#334155" />
+    </g>
+
+    <!-- Status message -->
+    <text x="24" y="160" fill="#38bdf8" font-family="monospace" font-size="12">
+      [Fase 3/4] Escribiendo Microcode y ME Region... NO APAGUE NI REINICIE EL EQUIPO.
+    </text>
+  </g>
+
+  <!-- Bottom Buttons -->
+  <g transform="translate(130, 570)">
+    <rect x="0" y="0" width="220" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="110" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Restaurar Failsafe</text>
+
+    <rect x="720" y="0" width="220" height="42" rx="8" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+    <text x="830" y="26" fill="white" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Flasheando ROM...</text>
+  </g>
+</svg>
