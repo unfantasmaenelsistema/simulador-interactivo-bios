@@ -168,7 +168,7 @@ Este **Simulador Educativo** fue desarrollado para ofrecer un entorno de laborat
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/bios-simulator.git
+   git clone https://github.com/unfantasmaenelsistema/bios-simulator.git
    cd bios-simulator
    ```
 
