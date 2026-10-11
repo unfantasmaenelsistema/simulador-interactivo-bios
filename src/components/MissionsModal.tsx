@@ -70,7 +70,7 @@ export const MissionsModal: React.FC<MissionsModalProps> = ({
               className="p-1 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-emerald-500/60 transition-all shrink-0"
               title="Un Fantasma en el Sistema"
             >
-              <img src="/icono.png" alt="Logo" className="w-8 h-8 object-contain" />
+              <img src={`${import.meta.env.BASE_URL}icono.png`} alt="Logo" className="w-8 h-8 object-contain" />
             </a>
             <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
               <Award className="w-6 h-6" />
@@ -295,7 +295,7 @@ export const MissionsModal: React.FC<MissionsModalProps> = ({
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-slate-400 hover:text-emerald-300 transition-colors"
           >
-            <img src="/icono.png" alt="Logo" className="w-4 h-4 object-contain" />
+            <img src={`${import.meta.env.BASE_URL}icono.png`} alt="Logo" className="w-4 h-4 object-contain" />
             <span>Casos prácticos de formación • <strong>Un Fantasma en el Sistema (www.unfantasmaenelsistema.com)</strong></span>
           </a>
           <span className="text-slate-500">Misiones de Hardware</span>

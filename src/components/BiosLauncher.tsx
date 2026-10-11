@@ -61,7 +61,7 @@ export const BiosLauncher: React.FC<BiosLauncherProps> = ({
             title="Visitar Un Fantasma en el Sistema (www.unfantasmaenelsistema.com)"
           >
             <img 
-              src="/icono.png" 
+              src={`${import.meta.env.BASE_URL}icono.png`} 
               alt="Logo Un Fantasma en el Sistema" 
               className="w-9 h-9 sm:w-10 sm:scale-105 object-contain filter drop-shadow group-hover:rotate-6 transition-transform" 
             />
@@ -330,7 +330,7 @@ export const BiosLauncher: React.FC<BiosLauncherProps> = ({
           className="flex items-center gap-2.5 text-slate-400 hover:text-cyan-300 transition-colors group"
         >
           <img 
-            src="/icono.png" 
+            src={`${import.meta.env.BASE_URL}icono.png`} 
             alt="Un Fantasma en el Sistema" 
             className="w-5 h-5 object-contain group-hover:rotate-6 transition-transform" 
           />

@@ -4,6 +4,7 @@
 
 ![Header Banner](docs/screenshots/banner-header.svg)
 
+[![Probar en Vivo](https://img.shields.io/badge/%F0%9F%9A%80%20Probar%20en%20Vivo-GitHub%20Pages-10b981?style=for-the-badge)](https://unfantasmaenelsistema.github.io/simulador-interactivo-bios/)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -13,7 +14,7 @@
 
 **Una plataforma interactiva y didáctica de código abierto para aprender el funcionamiento interno de la BIOS/UEFI, la secuencia POST, diagnóstico de hardware, estabilidad térmica y flasheo seguro de firmware.**
 
-[🌐 Sitio Web Oficial](https://unfantasmaenelsistema.com) • [✨ Características](#-características-principales) • [📸 Capturas](#-capturas-de-pantalla) • [🚀 Instalación](#-instalación-y-despliegue) • [🎮 Controles](#-atajos-de-teclado-y-controles) • [📂 Estructura](#-estructura-del-proyecto)
+[🚀 Aplicación en Vivo](https://unfantasmaenelsistema.github.io/simulador-interactivo-bios/) • [🌐 Sitio Web Oficial](https://unfantasmaenelsistema.com) • [✨ Características](#-características-principales) • [📸 Capturas](#-capturas-de-pantalla) • [🚀 Instalación](#-instalación-y-despliegue) • [🎮 Controles](#-atajos-de-teclado-y-controles) • [📂 Estructura](#-estructura-del-proyecto)
 
 </div>
 

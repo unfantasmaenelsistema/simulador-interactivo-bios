@@ -239,7 +239,7 @@ export const StressTestModal: React.FC<StressTestModalProps> = ({
               className="p-1 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-cyan-500/60 transition-all shrink-0"
               title="Un Fantasma en el Sistema"
             >
-              <img src="/icono.png" alt="Logo" className="w-8 h-8 object-contain" />
+              <img src={`${import.meta.env.BASE_URL}icono.png`} alt="Logo" className="w-8 h-8 object-contain" />
             </a>
             <div className="p-2.5 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-400">
               <Flame className="w-6 h-6 animate-pulse" />

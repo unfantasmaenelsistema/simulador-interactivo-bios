@@ -146,7 +146,7 @@ export const ModernUefiBios: React.FC<ModernUefiBiosProps> = ({
             title="Visitar Un Fantasma en el Sistema (www.unfantasmaenelsistema.com)"
           >
             <img 
-              src="/icono.png" 
+              src={`${import.meta.env.BASE_URL}icono.png`} 
               alt="Logo Un Fantasma en el Sistema" 
               className="w-8 h-8 object-contain group-hover:scale-110 transition-transform drop-shadow" 
             />

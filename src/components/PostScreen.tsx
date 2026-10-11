@@ -137,7 +137,7 @@ export const PostScreen: React.FC<PostScreenProps> = ({
             <div className="relative mb-6">
               <div className="w-24 h-24 rounded-2xl bg-gradient-to-tr from-cyan-600 via-indigo-600 to-fuchsia-600 p-0.5 shadow-2xl shadow-cyan-500/20">
                 <div className="w-full h-full bg-slate-950 rounded-2xl flex items-center justify-center p-2">
-                  <img src="/icono.png" alt="Logo Un Fantasma en el Sistema" className="w-16 h-16 object-contain drop-shadow animate-pulse" />
+                  <img src={`${import.meta.env.BASE_URL}icono.png`} alt="Logo Un Fantasma en el Sistema" className="w-16 h-16 object-contain drop-shadow animate-pulse" />
                 </div>
               </div>
               <div className="absolute -bottom-2 -right-2 px-2 py-0.5 rounded-full bg-cyan-500 text-[10px] font-bold text-black uppercase tracking-wider">

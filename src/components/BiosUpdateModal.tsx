@@ -267,7 +267,7 @@ export const BiosUpdateModal: React.FC<BiosUpdateModalProps> = ({
               title="Visitar Un Fantasma en el Sistema"
             >
               <img 
-                src="/icono.png" 
+                src={`${import.meta.env.BASE_URL}icono.png`} 
                 alt="Logo Un Fantasma en el Sistema" 
                 className="w-7 h-7 sm:w-8 sm:h-8 object-contain group-hover:scale-105 transition-transform" 
               />

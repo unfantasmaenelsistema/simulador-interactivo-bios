@@ -40,7 +40,7 @@ export const BrandKeysModal: React.FC<BrandKeysModalProps> = ({
               className="p-1 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-cyan-500/60 transition-all shrink-0"
               title="Un Fantasma en el Sistema"
             >
-              <img src="/icono.png" alt="Logo" className="w-8 h-8 object-contain" />
+              <img src={`${import.meta.env.BASE_URL}icono.png`} alt="Logo" className="w-8 h-8 object-contain" />
             </a>
             <div className="p-2.5 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
               <Key className="w-6 h-6" />
@@ -217,7 +217,7 @@ export const BrandKeysModal: React.FC<BrandKeysModalProps> = ({
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-slate-300 hover:text-cyan-300 transition-colors"
             >
-              <img src="/icono.png" alt="Logo" className="w-5 h-5 object-contain" />
+              <img src={`${import.meta.env.BASE_URL}icono.png`} alt="Logo" className="w-5 h-5 object-contain" />
               <span className="font-semibold">Un Fantasma en el Sistema</span>
             </a>
             <span className="hidden sm:inline text-slate-600">•</span>

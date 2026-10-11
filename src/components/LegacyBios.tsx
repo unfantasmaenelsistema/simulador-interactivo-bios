@@ -204,7 +204,7 @@ export const LegacyBios: React.FC<LegacyBiosProps> = ({
             className="flex items-center gap-2 group hover:opacity-95"
             title="Un Fantasma en el Sistema (www.unfantasmaenelsistema.com)"
           >
-            <img src="/icono.png" alt="Logo" className="w-6 h-6 object-contain group-hover:scale-105 transition-transform" />
+            <img src={`${import.meta.env.BASE_URL}icono.png`} alt="Logo" className="w-6 h-6 object-contain group-hover:scale-105 transition-transform" />
             <span className="text-yellow-300 font-bold tracking-widest text-sm text-left">
               Phoenix - AwardBIOS CMOS Setup Utility
             </span>
